@@ -3,9 +3,10 @@ const asserEqual = function(actual, expected) {
   const wrong = String.fromCodePoint(0x274C);
 
   if (actual === expected) {
-    console.log(rights + " Assertion Passed: " + actual + " === " + expected);
+    console.log(`${rights} Assertion Passed: ${actual} === ${expected}`);
+    
   } else {
-    console.log(wrong + " Assertion Failed: " + actual + " !== " + expected);
+    console.log(`${wrong} Assertion Failed: ${actual} !== ${expected}`);
   }
 
 };
