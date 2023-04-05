@@ -44,8 +44,5 @@ const middle = function(array){
 }
 const result = middle(getArguments())
 console.log(result)
+assertArraysEqual(middle([5,2,4,8]),[2,4])
 
-// console.log(middle([1, 2, 3, 4]))
-// console.log(middle([1, 2, 3, 4, 5, 6]))
-// console.log(middle([1, 2]))
-// console.log(middle([1, 2, 3, 4]))
