@@ -24,5 +24,11 @@ const countLetters = function (letters){
   return result
 
 }
-console.log(countLetters("hello"));
-console.log(assertEqual(countLetters("hello"), { h: 1, e: 1, l: 2, o: 1 } ));
+
+const finalResult = countLetters("hello")
+console.log(finalResult)
+assertEqual(finalResult["h"], 1)
+assertEqual(finalResult["e"], 1)
+assertEqual(finalResult["l"], 2)
+assertEqual(finalResult["o"], 1)
+assertEqual(finalResult["l"], 1)
