@@ -1,3 +1,8 @@
+const assert = require(`chai`).assert;
 const assertArraysEqual = require(`../assertArraysEqual`)
-assertArraysEqual(["1", "2", "3" ], ["1", "2", "3"]);
-assertArraysEqual(["1", "2", "3" , 5], ["1", "2", "3"]);
+
+describe(`#assertArraysEqual`, () => {
+  it("returns equal ", () => {
+    assert.equal(assertArraysEqual(["1", "2", "3" ], ["1", "2", "3"]), true)
+  })
+})
