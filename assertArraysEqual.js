@@ -1,8 +1,4 @@
-
-const eqArrays = function(array1, array2){
-  return JSON.stringify(array1) === JSON.stringify(array2)
-}  
-
+const eqArrays = require("./eqArrays");
 const assertArraysEqual = function(arg1, arg2){
   const rights = String.fromCodePoint(0x2705);
   const wrong = String.fromCodePoint(0x274C);
@@ -14,4 +10,5 @@ const assertArraysEqual = function(arg1, arg2){
   }
 };
 
-assertArraysEqual(["1", "2", "3" ], ["1", "2", "3"]);
+module.exports = assertArraysEqual;
+// assertArraysEqual(["1", "2", "3" ], ["1", "2", "3"]);
