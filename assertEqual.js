@@ -1,4 +1,4 @@
-const asserEqual = function(actual, expected) {
+const assertEqual = function(actual, expected) {
   const rights = String.fromCodePoint(0x2705);
   const wrong = String.fromCodePoint(0x274C);
 
@@ -11,7 +11,10 @@ const asserEqual = function(actual, expected) {
 
 };
 
+module.exports = assertEqual;
+
+
 //Test Code
 
-asserEqual("Lighthouse Labs", "Bootcamp");
-asserEqual(1,1);
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1,1);

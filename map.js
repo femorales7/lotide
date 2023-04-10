@@ -27,4 +27,6 @@ const result1 = map(words, word => word[0]);
 console.log(result1)
 
 
-assertArraysEqual(result1, [ 'g', 'c', 't', 'm', 't', 6 ]);
+assertArraysEqual(result1, [ 'g', 'c', 't', 'm', 't' ]);
+
+
